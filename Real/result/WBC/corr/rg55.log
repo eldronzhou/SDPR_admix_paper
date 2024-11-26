@@ -1,0 +1,84 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version 1.91.7 beta1
+* (C) 2010-2018, The University of Queensland
+* Please report bugs to: Jian Yang <jian.yang@uq.edu.au>
+*******************************************************************
+Analysis started at 23:39:41 UTC on Thu Jul 06 2023.
+Hostname: r206u29n10
+
+Accepted options:
+--reml
+--reml-no-lrt
+--reml-no-constrain
+--reml-est-fix
+--pheno ./rg55.pheno
+--out ./rg55
+--thread-num 2
+--grm ./rg55
+--qcovar ./rg55.covar
+
+Note: the program will be running on 2 threads.
+
+Reading IDs of the GRM from [./rg55.grm.id].
+13173 IDs read from [./rg55.grm.id].
+Reading the GRM from [./rg55.grm.bin].
+GRM for 13173 individuals are included from [./rg55.grm.bin].
+Reading phenotypes from [./rg55.pheno].
+Non-missing phenotypes of 4821 individuals are included from [./rg55.pheno].
+Reading quantitative covariates from [./rg55.covar].
+10 quantitative covariate(s) of 4821 individuals read from [./rg55.covar].
+
+10 quantitative variable(s) included as covariate(s).
+4821 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+4821 observations, 11 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.552468 0.621974
+logL: -2337.57
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-2235.87	0.72288	0.58798	
+2	-2217.62	0.88856	0.55092	
+3	-2207.01	1.03441	0.51662	
+4	-2201.25	1.15211	0.48838	
+5	-2198.31	1.24082	0.46700	
+6	-2196.88	1.30445	0.45174	
+7	-2196.22	1.34854	0.44126	
+8	-2195.91	1.44304	0.41911	
+9	-2195.67	1.43529	0.42176	
+10	-2195.67	1.43640	0.42141	
+11	-2195.67	1.43625	0.42146	
+12	-2195.67	1.43627	0.42145	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	1.436269	0.156875
+V(e)	0.421449	0.049771
+Vp	1.857718	0.111713
+V(G)/Vp	0.773136	0.039223
+
+Sampling variance/covariance of the estimates of variance components:
+2.460988e-02	-7.303629e-03	
+-7.303629e-03	2.477126e-03	
+Estimatesof fixed effects:
+
+Source	Estimate	SE
+mean	-0.100276	0.936913
+X_2	0.084203	0.049602
+X_3	-0.023395	0.033071
+X_4	-0.004670	0.033039
+X_5	-0.054369	0.031868
+X_6	-0.017640	0.031694
+X_7	0.000919	0.032281
+X_8	-0.063336	0.031832
+X_9	-0.025583	0.031928
+X_10	-0.025506	0.031598
+X_11	-0.028604	0.030551
+
+Summary result of REML analysis has been saved in the file [./rg55.hsq].
+
+Analysis finished at 23:40:45 UTC on Thu Jul 06 2023
+Computational time: 1 minute 4 second(s).

@@ -1,0 +1,83 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version 1.91.7 beta1
+* (C) 2010-2018, The University of Queensland
+* Please report bugs to: Jian Yang <jian.yang@uq.edu.au>
+*******************************************************************
+Analysis started at 22:41:16 UTC on Fri Jun 23 2023.
+Hostname: r105u04n03
+
+Accepted options:
+--reml
+--reml-no-lrt
+--reml-no-constrain
+--reml-est-fix
+--pheno ./rg10.pheno
+--out ./rg10
+--thread-num 2
+--grm ./rg10
+--qcovar ./rg10.covar
+
+Note: the program will be running on 2 threads.
+
+Reading IDs of the GRM from [./rg10.grm.id].
+13173 IDs read from [./rg10.grm.id].
+Reading the GRM from [./rg10.grm.bin].
+GRM for 13173 individuals are included from [./rg10.grm.bin].
+Reading phenotypes from [./rg10.pheno].
+Non-missing phenotypes of 13134 individuals are included from [./rg10.pheno].
+Reading quantitative covariates from [./rg10.covar].
+11 quantitative covariate(s) of 13134 individuals read from [./rg10.covar].
+
+11 quantitative variable(s) included as covariate(s).
+13134 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+13134 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.492067 0.482241
+logL: -3695.17
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-3688.94	0.44879	0.49206	
+2	-3686.56	0.41824	0.49923	
+3	-3685.30	0.39622	0.50457	
+4	-3684.62	0.38009	0.50862	
+5	-3684.25	0.34227	0.51841	
+6	-3683.78	0.33382	0.52129	
+7	-3683.75	0.33151	0.52206	
+8	-3683.75	0.33087	0.52228	
+9	-3683.75	0.33068	0.52234	
+10	-3683.75	0.33063	0.52236	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.330630	0.042213
+V(e)	0.522356	0.015430
+Vp	0.852987	0.029912
+V(G)/Vp	0.387615	0.036534
+
+Sampling variance/covariance of the estimates of variance components:
+1.781941e-03	-5.626482e-04	
+-5.626482e-04	2.380933e-04	
+Estimatesof fixed effects:
+
+Source	Estimate	SE
+mean	-0.280062	0.387484
+X_2	-0.960199	0.011378
+X_3	0.034940	0.023806
+X_4	-0.014030	0.018411
+X_5	0.009461	0.018206
+X_6	-0.021313	0.017810
+X_7	-0.025066	0.017661
+X_8	-0.006576	0.017764
+X_9	-0.022033	0.017641
+X_10	-0.000515	0.017731
+X_11	0.012474	0.017522
+X_12	-0.007958	0.017123
+
+Summary result of REML analysis has been saved in the file [./rg10.hsq].
+
+Analysis finished at 22:51:42 UTC on Fri Jun 23 2023
+Computational time: 10 minutes 25 second(s).

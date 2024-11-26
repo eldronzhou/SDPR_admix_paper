@@ -1,0 +1,80 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version 1.91.7 beta1
+* (C) 2010-2018, The University of Queensland
+* Please report bugs to: Jian Yang <jian.yang@uq.edu.au>
+*******************************************************************
+Analysis started at 00:24:48 UTC on Sat Jun 24 2023.
+Hostname: r105u04n03
+
+Accepted options:
+--reml
+--reml-no-lrt
+--reml-no-constrain
+--reml-est-fix
+--pheno ./rg70.pheno
+--out ./rg70
+--thread-num 2
+--grm ./rg70
+--qcovar ./rg70.covar
+
+Note: the program will be running on 2 threads.
+
+Reading IDs of the GRM from [./rg70.grm.id].
+13173 IDs read from [./rg70.grm.id].
+Reading the GRM from [./rg70.grm.bin].
+GRM for 13173 individuals are included from [./rg70.grm.bin].
+Reading phenotypes from [./rg70.pheno].
+Non-missing phenotypes of 13134 individuals are included from [./rg70.pheno].
+Reading quantitative covariates from [./rg70.covar].
+11 quantitative covariate(s) of 13134 individuals read from [./rg70.covar].
+
+11 quantitative variable(s) included as covariate(s).
+13134 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+13134 observations, 12 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values:  0.49628 0.484266
+logL: -3655.7
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-3651.48	0.53301	0.47036	
+2	-3649.74	0.56013	0.46033	
+3	-3648.85	0.57994	0.45314	
+4	-3648.39	0.62537	0.43688	
+5	-3647.93	0.63037	0.43544	
+6	-3647.93	0.63082	0.43530	
+7	-3647.93	0.63086	0.43529	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.630865	0.056363
+V(e)	0.435290	0.017772
+Vp	1.066155	0.041049
+V(G)/Vp	0.591719	0.030779
+
+Sampling variance/covariance of the estimates of variance components:
+3.176787e-03	-9.037889e-04	
+-9.037889e-04	3.158517e-04	
+Estimatesof fixed effects:
+
+Source	Estimate	SE
+mean	-0.276573	0.639009
+X_2	-0.960965	0.011346
+X_3	0.029337	0.023671
+X_4	-0.013395	0.017786
+X_5	0.006947	0.017585
+X_6	-0.018175	0.017212
+X_7	-0.021145	0.017049
+X_8	-0.009595	0.017163
+X_9	-0.020895	0.017029
+X_10	0.000171	0.017149
+X_11	0.011899	0.016898
+X_12	-0.005748	0.016535
+
+Summary result of REML analysis has been saved in the file [./rg70.hsq].
+
+Analysis finished at 00:32:45 UTC on Sat Jun 24 2023
+Computational time: 7 minutes 57 second(s).
